@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cbarobokings.robokings2025scouting.QRCodeController">
+   <top>
+      <AnchorPane prefHeight="90.0" prefWidth="600.0" style="-fx-background-color: gold;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="506.0" layoutY="6.0" text="QR CODE" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Bold" size="60.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: gold;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="qrImageWindowLocation" fitHeight="505.0" fitWidth="505.0" layoutX="328.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="clearQRdirButton" alignment="BASELINE_CENTER" contentDisplay="CENTER" layoutX="909.0" layoutY="225.0" mnemonicParsing="false" onAction="#clearQRdirButtonClick" prefHeight="120.0" prefWidth="159.0" text="Clear QR Codes Internal Directory (ONLY CLICK WHEN TOLD)" wrapText="true">
+               <font>
+                  <Font name="Berlin Sans FB Bold" size="15.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" green="0.7666666507720947" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.6166666746139526" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+         </children></AnchorPane>
+   </center>
+   <left>
+      <AnchorPane prefHeight="140.0" prefWidth="60.0" style="-fx-background-color: gold;" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <AnchorPane prefHeight="140.0" prefWidth="60.0" style="-fx-background-color: gold;" BorderPane.alignment="CENTER" />
+   </right>
+   <bottom>
+      <AnchorPane prefHeight="60.0" prefWidth="600.0" style="-fx-background-color: darkorchid;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="scoutNextMatch_Button" layoutX="560.0" layoutY="10.0" mnemonicParsing="false" onAction="#scoutNextMatchButtonClick" prefHeight="40.0" prefWidth="160.0" text="Scout Next Match">
+               <font>
+                  <Font name="Berlin Sans FB Bold" size="15.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+   </bottom>
+</BorderPane>
