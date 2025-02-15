@@ -13,7 +13,7 @@ public class BlueAllianceFetcher {
             String folderName = "robokingsscouting";
 
             // File for config
-            File configFile = new File(folderName, "config.txt");
+            File configFile = new File("robokingsscouting/config.txt");
 
             // Read API key and event key from config.txt
             String apiKey = "";
