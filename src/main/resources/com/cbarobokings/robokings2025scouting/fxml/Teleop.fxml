@@ -82,17 +82,17 @@
    <bottom>
       <AnchorPane prefHeight="60.0" prefWidth="600.0" style="-fx-background-color: darkorchid;" BorderPane.alignment="CENTER">
          <children>
-            <Label layoutX="524.0" layoutY="6.0" text="NAVIGATION" textAlignment="CENTER" textFill="WHITE">
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="524.0" layoutY="6.0" text="NAVIGATION" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="Berlin Sans FB Bold" size="36.0" />
                </font>
             </Label>
-            <Button fx:id="next_Button" layoutX="807.0" layoutY="10.0" mnemonicParsing="false" onAction="#toEndgameButtonClick" prefHeight="40.0" prefWidth="100.0" text="Endgame">
+            <Button fx:id="next_Button" alignment="CENTER" contentDisplay="CENTER" layoutX="807.0" layoutY="10.0" mnemonicParsing="false" onAction="#toEndgameButtonClick" prefHeight="40.0" prefWidth="100.0" text="Endgame" textAlignment="CENTER">
                <font>
                   <Font name="Berlin Sans FB Bold" size="15.0" />
                </font>
             </Button>
-            <Button fx:id="back_Button" layoutX="374.0" layoutY="10.0" mnemonicParsing="false" onAction="#backToAutonButtonClick" prefHeight="40.0" prefWidth="100.0" text="Auton">
+            <Button fx:id="back_Button" alignment="CENTER" contentDisplay="CENTER" layoutX="374.0" layoutY="10.0" mnemonicParsing="false" onAction="#backToAutonButtonClick" prefHeight="40.0" prefWidth="100.0" text="Auton" textAlignment="CENTER">
                <font>
                   <Font name="Berlin Sans FB Bold" size="15.0" />
                </font>

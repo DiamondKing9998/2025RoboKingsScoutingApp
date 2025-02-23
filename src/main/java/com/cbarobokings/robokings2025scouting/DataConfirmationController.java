@@ -58,7 +58,11 @@ public class DataConfirmationController {
         String startingColorAndPosition = (String) finalizationStore.getValue("startingColorAndPosition");
         String preloadedCoral;
         if (finalizationStore.getValue("preloadedCoral") != null) {
-            preloadedCoral = finalizationStore.getValue("preloadedCoral").toString();
+            if (finalizationStore.getValue("preloadedCoral").equals(false)) {
+                preloadedCoral = "false";
+            } else {
+                preloadedCoral = "true";
+            }
         } else {
             preloadedCoral = "false";
         }
@@ -75,7 +79,11 @@ public class DataConfirmationController {
         String autonCoralDropped = (String) finalizationStore.getValue("autonCoralDropped");
         String leftStartingZone;
         if (finalizationStore.getValue("leftStartingZone") != null) {
-            leftStartingZone = finalizationStore.getValue("leftStartingZone").toString();
+            if (finalizationStore.getValue("leftStartingZone").equals(false)) {
+                leftStartingZone = "false";
+            } else {
+                leftStartingZone = "true";
+            }
         } else {
             leftStartingZone = "false";
         }
@@ -94,7 +102,11 @@ public class DataConfirmationController {
         String endgamePosition = (String) finalizationStore.getValue("endgamePosition");
         String playedDefense;
         if (finalizationStore.getValue("playedDefense") != null) {
-            playedDefense = finalizationStore.getValue("playedDefense").toString();
+            if (finalizationStore.getValue("playedDefense").equals(false)) {
+                playedDefense = "false";
+            } else {
+                playedDefense = "true";
+            }
         } else {
             playedDefense = "false";
         }
@@ -219,7 +231,11 @@ public class DataConfirmationController {
         String startingColorAndPosition = (String) finalizationStore.getValue("startingColorAndPosition");
         String preloadedCoral;
         if (finalizationStore.getValue("preloadedCoral") != null) {
-            preloadedCoral = "Yes";
+            if (finalizationStore.getValue("preloadedCoral").equals(true)) {
+                preloadedCoral = "Yes";
+            } else {
+                preloadedCoral = "No";
+            }
         } else {
             preloadedCoral = "No";
         }
@@ -236,7 +252,11 @@ public class DataConfirmationController {
         String autonCoralDropped = (String) finalizationStore.getValue("autonCoralDropped");
         String leftStartingZone;
         if (finalizationStore.getValue("leftStartingZone") != null) {
-            leftStartingZone = "Yes";
+            if (finalizationStore.getValue("leftStartingZone").equals(true)) {
+                leftStartingZone = "Yes";
+            } else {
+                leftStartingZone = "No";
+            }
         } else {
             leftStartingZone = "No";
         }
@@ -255,7 +275,11 @@ public class DataConfirmationController {
         String endgamePosition = (String) finalizationStore.getValue("endgamePosition");
         String playedDefense;
         if (finalizationStore.getValue("playedDefense") != null) {
-            playedDefense = "Yes";
+            if (finalizationStore.getValue("playedDefense").equals(true)) {
+                playedDefense = "Yes";
+            } else {
+                playedDefense = "No";
+            }
         } else {
             playedDefense = "No";
         }
